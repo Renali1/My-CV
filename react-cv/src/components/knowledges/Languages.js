@@ -1,30 +1,20 @@
-import React, { Component } from 'react';
-import ProgressBar from './ProgressBar';
+import React from 'react';
 
-class Languages extends Component {
-  state = {
-    languages: [
-      {id: 1, value: "Anglais", xp:1.7},
-      {id: 2, value: "Espagnol", xp:0.7},
-      {id: 3, value: "Japonais", xp:0.5}
-    ],
-    countries: [
-      {id: 1, value: "Espagne", xp:0},
-      {id: 2, value: "Italie", xp:0},
-      {id: 3, value: "Allemagne", xp:0},
-      {id: 4, value: "Japon", xp:0},
-
-    ]
-  }
-  render() {
-    let {languages, countries} = this.state;
-    return (
-      <div className="languagesAndCountries">
-          <ProgressBar array={languages} className="languagesDisplay" title="Langues" />
-          <ProgressBar array={countries} className="countriesDisplay" title="Pays" />
-      </div>
-    );
-  }
+const Languages = () => {
+  return (
+    <div className="languagesAndCountries">
+      <h3>Motivations</h3>
+      <ul>
+        <li>
+          <span>Ancien comptable reconverti dans le développement web, j'ai pour objectif de réaliser des missions ponctuelles 
+                dans ce milieu, que j'aimerai combiner avec une activité salariée. Etant attiré par le métier de barman 
+                depuis des années, j'ai notamment utilisé mon CPF pour suivre une formation de barman débutant (en distanciel). 
+                Je suis également passioné de jeux vidéos et d'e-sport, c'est pourquoi il m'a paru naturel 
+                de postuler chez vous. </span>
+        </li>
+      </ul>
+    </div>
+  );
 };
 
 export default Languages;

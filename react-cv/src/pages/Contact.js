@@ -15,10 +15,10 @@ const Contact = () => {
                 Habite à Vandoeuvre-les-Nancy
               </li>
               <li>               
-                06 45 77 37 48               
+                Tel : 06 45 77 37 48               
               </li>
               <li>
-                jonathan.fleurentin@gmail.com
+                Mail : jonathan.fleurentin@gmail.com
               </li>
             </ul>
           </div>

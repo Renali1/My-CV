@@ -12,9 +12,10 @@
         "O O H";
   
       .languagesAndCountries, .experience, .skills, .interests {
-        background: $color-2;
+        background: $black;
         border-radius: $borderRadius;
         padding: .8rem;
+        color: $white;
       }
       h3 {
         font-size: 1.4rem;
@@ -23,53 +24,26 @@
         color: $color-5;
         text-transform: uppercase;
       }
-  
       .languagesAndCountries {
         grid-area: L;
+        padding-left: 1.5rem;
         margin-bottom: .5rem;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-          "L"
-          "F";
-  
-        .languagesDisplay {
-          grid-area: L;
-        }
-        .countriesDisplay {
-          grid-area: F;
-        }
-        h3 {
-          margin-bottom: 0.3rem;
-        }
-  
         
-        .languagesList {
-          padding-top: .5rem;
+        ul {
+          height: 80%;
+          line-height : 2em;
   
           li {
-            color: $color-1;
-          }
-          // .progressBar {
-          //   height: .4rem;
-          //   background: transparent;
-          //   border-radius: 50px;
-          //   margin-top: 0.2rem;
-          //   position: relative;
-  
-          //   &:after {
-          //     content: '';
-          //     position: absolute;
-          //     background: $color-3;
-          //     border-radius: 50px;
-          //     height: .4rem;
-          //     width: 100%;
+            span {
+              text-align: center;
+              transform: translateX(2.2rem);
               
-          //   } 
-          //} ne fonctionne pas
+            }
+          }
         }
       }
+
+
       .experience {
         grid-area: E;
         margin: 0 0 .5rem .5rem;
@@ -89,12 +63,13 @@
           color: $color-5;
         }
         h5 {
-          color: $color-3;
+          color: $white;
           padding: 0.5rem 0 0.5rem 1rem;
         }
         p {
           text-align: justify;
           padding: 0 1rem;
+          color: $white;
         }
         .exp-1 {
           grid-area: 2;
@@ -111,15 +86,21 @@
           display: flex;
           width: 80%;
           height: 100%;
-          margin: 0 auto;
           justify-content: space-between;
   
           ul {
             height: 80%;
             display: grid;
   
-            i {
-              color: $color-5;
+            li {
+              i {
+                position: absolute;
+                color: $color-5;
+              }
+              span {
+                text-align: center;
+                transform: translateX(2.2rem);
+              }
             }
           }
         }
@@ -138,7 +119,7 @@
               color: $color-5;
             }
             span {
-              position: absolute;
+              text-align: center;
               transform: translateX(2.2rem);
             }
           }
@@ -146,19 +127,39 @@
       }
     }
   }
-  @media screen and (max-width: 950px){
+  @media screen and (max-width: 1100px){
     .knowledgesContent {
       h3 {
-        font-size: 1.2rem !important;
+        font-size: 1rem !important;
       }
       .languagesList {
         padding-top: .2rem !important;
       }
       p {
         font-size: .8rem;
+        color: $color-3;
       }
       .skills, .interests {
         font-size: .8rem;
+      }
+      span {
+        font-size: .8rem;
+        color: $white;
+      }
+    }
+  }
+  @media screen and (max-width: 950px){
+    .knowledgesContent {
+      h4 {
+        font-size: .9rem !important;
+      }
+      h5 {
+        font-size: .65em !important;
+        padding: .2rem 1rem !important;
+      }
+      span {
+        font-size: .65rem;
+        color: $white;
       }
     }
   }
@@ -168,8 +169,43 @@
         font-size: .9rem !important;
       }
       h5 {
-        font-size: .6rem !important;
+        font-size: .65em !important;
         padding: .2rem 1rem !important;
+      }
+      span {
+        font-size: .8rem;
+        color: $white;
+      }
+    }
+  }
+  @media screen and (max-width: 700px){
+    .knowledgesContent {
+      h4 {
+        font-size: .9rem !important;
+      }
+      h5 {
+        font-size: .65em !important;
+        padding: .2rem 1rem !important;
+      }
+      
+      span {
+        font-size: .7rem;
+        color: $white;
+      }
+    }
+  }
+  @media screen and (max-width: 630px){
+    .knowledgesContent {
+      h4 {
+        font-size: .9rem !important;
+      }
+      h5 {
+        font-size: .65em !important;
+        padding: .2rem 1rem !important;
+      }
+      span {
+        font-size: .5rem;
+        color: $white;
       }
     }
   }
@@ -179,6 +215,10 @@
       grid-template-columns: 1fr !important;
       grid-template-rows: 1fr 1fr 180px 180px !important;
       
+      span {
+        font-size: .8rem;
+        color: $white;
+      }
       .languages {
         grid-area: 1 !important;
       }

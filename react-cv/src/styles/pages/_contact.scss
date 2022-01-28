@@ -1,32 +1,29 @@
 .contactContent {
-    background: $color-2;
+    background: $black;
     border-radius: $borderRadius;
     width: 100%;
     overflow: hidden;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20% 45% 35%;
+    grid-template-rows: 30% 40% 30%;
     grid-template-areas: 
       "1"
       "2"
       "3";
   
-    // .header {
-    //   grid-area: 1;
-    //   width: 100%;
-    //   position: relative;
-    //   background: $color-3;
-    //   height: 340px;
-    // }
+    .header {
+      grid-area: 2;
+      width: 100%;
+      position: relative;
+      background: $black;
+      height: 400px;
+    }
     .contactBox {
-      grid-area: 1;
-      background: $color-5;
+      grid-area: 2;
+      background: $black;
       margin: 0 auto;
       padding: 1rem 3rem;
-      z-index: 2;
-      border-radius: $borderRadius;
-      box-shadow: 0 3px 10px #333;
-      width: 50%;
+      
       min-width: 440px;
       min-height: 200px;
   
@@ -34,18 +31,8 @@
         text-align: center;
         margin-top: 0.3rem;
         position: relative;
-        color: $color-2;
+        color: $color-5;
   
-        &:after {
-          content: '';
-          height: 1px;
-          width: 50%;
-          background: $color-1;
-          position: absolute;
-          bottom: -25px;
-          left: 50%;
-          transform: translateX(-50%);
-        }
       }
       ul {
         height: 72%;
@@ -55,20 +42,9 @@
   
         li {
           position: relative;
-        }
-        span {
+          color: $white;
+          text-align: center;
           font-size: 1.4rem;
-          position: absolute;
-          transform: translateX(52px);
-          background: transparent;
-          border: none;
-          outline: none;
-          width: 350px;
-          transition: .2s ease;
-        }
-        .clickInput:hover {
-          transform: translateX(56px);
-          cursor: pointer;
         }
       }
     }

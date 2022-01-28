@@ -18,24 +18,19 @@ const Navigation = () => {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink exact to="/contact" activeClassName="navActive">
-                        <span>Contact</span>
-                    </NavLink>
-                </li>
-                <li>
                     <NavLink exact to="/competences" activeClassName="navActive">
                         <span>Competences</span>
                     </NavLink>
                 </li>
                 <li>
-                    {/* <NavLink exact to="/portfolio" activeClassName="navActive">
-                        <span>Experiences</span>
-                    </NavLink> */}
+                    <NavLink exact to="/contact" activeClassName="navActive">
+                        <span>Contact</span>
+                    </NavLink>
+                </li>
+                <li>
+                    <p className="signature">CV - 2022</p>
                 </li>
             </ul>
-            <div className="signature">
-                <p>Mon CV - 2022</p>
-            </div>
         </div>
     </div>
   );
