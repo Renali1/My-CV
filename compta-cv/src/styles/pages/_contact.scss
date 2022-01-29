@@ -1,0 +1,64 @@
+.contactContent {
+    background: $black;
+    border-radius: $borderRadius;
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 40% 30%;
+    grid-template-areas: 
+      "1"
+      "2"
+      "3";
+  
+    .header {
+      grid-area: 2;
+      width: 100%;
+      position: relative;
+      background: $black;
+      height: 400px;
+    }
+    .contactBox {
+      grid-area: 2;
+      background: $black;
+      margin: 0 auto;
+      padding: 1rem 3rem;
+      
+      min-width: 440px;
+      min-height: 200px;
+  
+      h1 {
+        text-align: center;
+        margin-top: 0.3rem;
+        position: relative;
+        color: $color-5;
+  
+      }
+      ul {
+        height: 72%;
+        width: inherit;
+        display: grid;
+        margin-top: 3.5rem;
+  
+        li {
+          position: relative;
+          color: $white;
+          text-align: center;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 500px){
+    .contactContent {
+      .contactBox {
+        min-width: 100% !important;
+      }
+      span {
+        font-size: .9rem !important;
+      }
+      h4 {
+        font-size: .9rem;
+      }
+    }
+  }
