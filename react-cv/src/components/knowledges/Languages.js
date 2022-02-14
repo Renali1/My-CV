@@ -6,11 +6,14 @@ const Languages = () => {
       <h3>Motivations</h3>
       <ul>
         <li>
-          <span>Ancien comptable reconverti dans le développement web, j'ai pour objectif de réaliser des missions ponctuelles 
-                dans ce milieu, que j'aimerai combiner avec une activité salariée. Etant attiré par le métier de barman 
-                depuis des années, j'ai notamment utilisé mon CPF pour suivre une formation de barman débutant (en distanciel). 
-                Je suis également passioné de jeux vidéos et d'e-sport, c'est pourquoi il m'a paru naturel 
-                de postuler chez vous. </span>
+          <span>Après 8 ans passés dans la comptabilité, j'ai entamé une reconversion professionnelle avec pour objectif
+                de devenir développeur web. J'ai tout d'abord commencé par une formation "devenir développeur Java" en
+                distanciel en utilisant mon CPF, avant de poursuivre en rejoignant la Coding Academy au sein d'Epitech à Nancy.
+                La rigueur, l'autonomie et la soif d'apprendre sont clairement mis en avant dans cette école, et nous avons vu une
+                bonne quantité de technologies web en seulement 10 semaines.
+                Désireux de connaitre ma première expérience dans le milieu, je suis tombé sur votre offre qui m'a directement
+                emballée. Je me retrouve dans vos valeurs et suis plus que motivé à rejoindre votre équipe pour le début 
+                d'une nouvelle aventure. </span>
         </li>
       </ul>
     </div>

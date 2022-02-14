@@ -6,10 +6,10 @@ const Skills = () => {
       <h3>Compétences</h3>
       <div className="list">
         <ul>
-          <li>Bases programmation / Création de sites web</li>
+          <li>Tech vu en formation : PHP / HTML / CSS / Javascript / </li>
+          <li>Laravel / Vue / MySQL / Docker / Github </li>
           <li>Maitrise pack office (excel, word...)</li>
-          <li>Relation client</li>
-          <li>Autonomie / Rigueur / Travail d'équipe</li>
+          <li>Autonomie / Rigueur / Travail d'équipe (8ans en open space)</li>
         </ul>
       </div>
     </div>

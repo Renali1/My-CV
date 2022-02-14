@@ -17,7 +17,7 @@ const Experience = () => {
         <div className="exp-3">
           <h4>Etudiant - Epitech Nancy</h4>
           <h5>2021</h5>
-          <p>Reconversion entamée l'année dernière, dans le monde du développement web, qui est tout autant intéressant qu'enrichissant, malgré sa difficulté d'apprentissage</p>
+          <p>Reconversion entamée l'année dernière, dans le monde du développement web, j'y ai découvert ma nouvelle vocation et toutes les bases nécessaires pour commencer une nouvelle carrière</p>
         </div>
     </div>
   );
